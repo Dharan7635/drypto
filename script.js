@@ -39,8 +39,13 @@ async function apiRequest2(){
 
 const hamburger = document.getElementsByClassName("toggle-button")[0];
 const navlist = document.querySelector(".navlist");
+const xbutton = document.querySelector(".x-button");
 console.log(navlist);
 console.log(hamburger);
-hamburger.addEventListener("click",()=>{
+hamburger.addEventListener("click",toggle);
+xbutton.addEventListener("click",toggle);
+function toggle(){
     navlist.classList.toggle("active");
-})
+    hamburger.classList.toggle("deactive");
+    xbutton.classList.toggle("active");
+}

@@ -88,12 +88,42 @@
     background-color: #fff;
     border-radius: 10px;
 }
+.navbar .x-button {
+    position: absolute;
+    top: 1.65rem;
+    right: 1rem;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 21px;
+}
+
+.x-button .x-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.x-button .bar1{
+    rotate: 45deg;
+}
+.x-button .bar2{
+    position: absolute;
+    rotate: -45deg;
+}
 
 @media(max-width:600px) {
     .navbar .toggle-button {
         display: flex;
     }
+    .navbar .toggle-button.deactive{
+        display: none;
+    }
 
+    .navbar .x-button.active{
+        display: flex;
+    }
     .navigations {
         width: 100%;
     }
